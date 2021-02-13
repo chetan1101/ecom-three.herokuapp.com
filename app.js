@@ -8,8 +8,6 @@ const productRouter = require('./Routes/productRoute');
 const userRouter = require('./Routes/userRoute');
 const orderRouter = require('./Routes/orderRoute');
 
-require('./db');
-
 app.use(bodyParser.json());
 app.use(cors());
 app.use('/api/products', productRouter);
@@ -25,5 +23,5 @@ if(process.env.NODE_ENV === 'production'){
     })
   }
 
-
+require('./db');
 app.listen(Port, () => console.log(`server is running on port ${Port}`));

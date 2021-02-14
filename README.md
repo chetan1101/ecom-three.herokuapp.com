@@ -11,4 +11,3 @@
 9. Manage backend by node, express and mongodb.
 10. User authentication by jsonwebtoken.
 11. Password encrypted by bcryptjs.
-12. Implement react-helmet to manage meta information.
